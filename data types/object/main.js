@@ -137,28 +137,51 @@
 // console.log(obj)
 
 // Convert an Object to an Array – Convert an object’s keys and values into an array format.
-const obj={
-        name:'bhushan',
-        age:28,
-        bGroup:'O+',
-        DOB:'12-09-1997'
-    }
+
+// const obj={
+//         name:'bhushan',
+//         age:28,
+//         bGroup:'O+',
+//         DOB:'12-09-1997'
+//     }
 
 
-    console.log(Object.entries(obj))
+//     console.log(Object.entries(obj))
+
 // Find the Size of an Object – Count the number of key-value pairs in an object.
 
 
-console.log(Object.keys(obj).length)
+// console.log(Object.keys(obj).length);
+
 // Intermediate Level (11-20)
 // Sort an Array of Objects – Sort an array of objects by a specific property (e.g., age).
+
+// const arr=[{age:30},{age:50},{age:2},{age:25},{age:23}]
+// const arr=[1,2,3,6,5,7,9,5];
+// console.log(arr.sort((item,item2) =>item2.age-item.age));
+// console.log(arr.sort((item,item2) =>item.age-item2.age));
+
 
 
 
 
 // Filter an Array of Objects – Find all objects that match a given condition.
 
+// const arr=[{age:30},{age:50},{age:2},{age:25},{age:23}];
+
+// console.log(arr.filter((item)=>item.age>25))
+
+
+
+
+
 // Find an Object in an Array – Search for an object based on a specific property value.
+
+// const arr=[{age:30},{age:50},{age:2},{age:25},{age:23}];
+
+// console.log(arr.find((item)=>item.age==30))
+
+
 
 // Flatten a Nested Object – Convert a deeply nested object into a flat object with dot notation keys.
 
@@ -167,6 +190,19 @@ console.log(Object.keys(obj).length)
 // Compare Two Objects – Check if two objects are deeply equal.
 
 // Find Duplicates in an Array of Objects – Identify duplicate objects based on a specific property.
+
+// const arr=[{no:1,age:30},{no:2,age:50},{no:3,age:2},{no:4,age:25},{no:5,age:23},{no:6,age:23},{no:7,age:2}];
+// for(let i=0; i<arr.length; i++){
+
+
+// for(let j=i+1 ;j<arr.length; j++){
+// if(arr[i].age==arr[j].age){
+//     console.log(`duplicate found ${JSON.stringify(arr[i])} and ${JSON.stringify(arr[j])} are equal` )
+// }
+
+// }
+
+// }
 
 // Group Objects by a Property – Group an array of objects based on a property value.
 
@@ -186,6 +222,23 @@ console.log(Object.keys(obj).length)
 // Deep Clone an Object – Implement a function to deeply clone an object without using JSON.stringify().
 
 // Check if an Object is Empty – Write a function to check if an object has no properties.
+
+// const obj={
+//     a:'a',
+//     b:'b'
+// }
+
+// function checkEmpty(ob){
+//     if(Object.keys(ob).length==0){
+//         console.log('no props')
+//     }
+//     else{
+//         console.log('props present')
+//     }
+// }
+
+// checkEmpty(obj);
+
 
 // Convert an Object into Query Parameters – Convert an object into a URL query string.
 
