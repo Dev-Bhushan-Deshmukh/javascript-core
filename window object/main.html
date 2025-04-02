@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
+        <span>Select an Element – How do you select an element by its ID, class, or tag name?</span>
 <ul id="main-list">
     
     <li class="inner-list">l3</li>
@@ -19,11 +20,65 @@
     <li class="inner-list">l3</li>
     <li class="inner-list">l4</li>
     <li class="inner-list">l5</li>
+
+    <span>non li Item</span>
 </ul>
 
-
-
+<button onclick=changeContent()>click me</button>
+<span>Change Text Content – Write code to change the text inside a element.</span>
+<p>intial text </p>
         
+
+<button onclick=changeText()>change text</button>
+
+<span> Modify an Attribute – How can you change the src attribute of an tag dynamically?</span>
+<img src="https://th.bing.com/th/id/OSK.HEROGLit0G7C_sVAzGZYoabO-Xaih239ffzWh-HxYpS8coI?w=472&h=280&c=1&rs=2&o=6&dpr=1.3&pid=SANGAM" alt="">
+
+<button onclick="changeSrc()">change</button>
+
+<br>
+
+<span> Add and Remove a Class – Write JavaScript to add and remove a class from an element.</span>
+
+
+<div id="my-div" class="my-class " class="my-class-two"> remove and add new class from this div</div>
+<button onclick="changeClass()">change class</button>
+<br>
+<span>// Remove an Element – How do you remove an element from the DOM?</span>
+<div id="div-remove"> remove this Item</div>
+<button onclick="removeItem()">remove</button>
+
+<br>
+<span>// Prevent Default Behavior – How do you prevent a form submission using JavaScript?</span>
+
+
+<form action="" onsubmit="formSubmit(event)">
+
+
+    <button type="submit">save</button>
+</form>
+
+<span>Find Parent, Child, and Sibling Elements – Given an element, find its parent, children, and next sibling.</span>
+
+<div id="parent-container">
+
+    <div id="child-container" class="sibling-div">
+
+        <button>1</button>
+        <button>2</button>
+
+    </div>
+    <div class="sibling-div">div 2</div>
+    <div class="sibling-div">div 3</div>
+    <div class="sibling-div">div 4</div>
+
+
+
+</div>
+
+
+
+
         <script src="dom.js" async defer></script>
     </body>
 </html>
