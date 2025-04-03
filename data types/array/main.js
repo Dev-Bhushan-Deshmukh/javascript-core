@@ -80,31 +80,41 @@
 
 // Find Union and Intersection of Two Arrays – Return both the union and intersection.
 
-let arr=[1,2,3,4,5];
-let arr2=[1,3,6];
-let intersection=[];
-let union=[];
+// let arr=[1,2,3,4,5];
+// let arr2=[1,3,6];
+// let intersection=[];
+// let union=[];
 
-for(let i of arr){
+// for(let i of arr){
 
-if(arr2.includes(i)){
+// if(arr2.includes(i)){
 
-intersection.push(i);
+// intersection.push(i);
 
-}
-else{
-    union.push(i);
-}
-}
-for(let i of arr2){
-    if(!intersection.includes(i))
-    {
-        union.push(i)
-    }
-}
-console.log(union,intersection)
+// }
+// else{
+//     union.push(i);
+// }
+// }
+// for(let i of arr2){
+//     if(!intersection.includes(i))
+//     {
+//         union.push(i)
+//     }
+// }
+// console.log(union,intersection)
 
 
+
+//randomise array
+const arr=[1,2,3,4,5,6,7,8,9];
+function getRandomIntInclusive(min, max) {
+    const minCeiled = Math.ceil(min);
+    const maxFloored = Math.floor(max);
+    return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
+  }
+  
+arr.forEach((item)=> console.log (getRandomIntInclusive(0,arr.length-1)))
 // Sort an Array of 0s, 1s, and 2s – Sort an array containing only 0, 1, and 2 without using sorting algorithms.
 
 // Subarray with Given Sum – Find a continuous subarray that adds up to a given sum.
@@ -149,4 +159,3 @@ console.log(union,intersection)
 
 
 
-/

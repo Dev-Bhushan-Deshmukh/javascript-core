@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
-    <body>
+    <body style="position: relative;">
         <span>Select an Element – How do you select an element by its ID, class, or tag name?</span>
 <ul id="main-list">
     
@@ -75,6 +75,44 @@
 
 
 </div>
+
+
+<span>Modify CSS with JavaScript – Change the background color of a div when a button is clicked.
+</span>
+
+<div id="div-color" style="height: 200px; width: 300px; background-color: red;">  change my color</div>
+
+<button onclick="changeColor()">change color</button>
+
+<span>// Toggle an Element's Visibility – Implement a show/hide functionality for a div </span>
+
+
+<div id="div-toggle" style="height: 200px; width: 300px; background-color: red; visibility: visible;">  change my color</div>
+
+<button onclick="toggleVisibility()">change color</button>
+
+
+<span>// Add Multiple Event Listeners – Add an event listener to multiple buttons and log their text on click.</span>
+
+<button class="btn-mult">mulitple -1</button>
+<button class="btn-mult">mulitple -2</button>
+<button class="btn-mult">mulitple -3</button>
+<button class="btn-mult">mulitple -4</button>
+<button class="btn-mult">mulitple -5</button>
+<button onclick="addEvent()">add event</button>
+
+
+
+<span>Create a Modal Popup – Implement a modal using JavaScript without any external library.
+</span>
+
+<div id="modal-item" style="display: none; height: 300px;width: 300px; background-color: green;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);"> modal opened</div>
+
+<button onclick="openModal()">open modal</button>
+<span> Clone an Element – Write a function to duplicate an element and append it to the DOM.
+</span>
+
+<div onclick="cloneMe(event)" class="duplicate-item" style="background-color: blueviolet; height: 100px;width: 200px; margin: 10px;"> click to clone me </div>
 
 
 

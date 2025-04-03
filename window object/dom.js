@@ -1,8 +1,8 @@
 
-// Basic Level (1-10)
-// What is the DOM? Explain how the DOM works in a web page.
+//*!  Basic Level (1-10)
+//*! *!  What is the DOM? Explain how the DOM works in a web page.
 
-// Select an Element – How do you select an element by its ID, class, or tag name?
+//*!  Select an Element – How do you select an element by its ID, class, or tag name?
 
 // function changeContent(){
 
@@ -33,101 +33,132 @@
 
 
 
-// Change Text Content – Write code to change the text inside a <p> element.
+//*!  Change Text Content – Write code to change the text inside a <p> element.
 
-function changeText(){
+// function changeText(){
 
-let pTag=document.querySelector('p')
-pTag.innerText='P tag text altered'
+// let pTag=document.querySelector('p')
+// pTag.innerText='P tag text altered'
 
 
-}
+// }
 
-// Modify an Attribute – How can you change the src attribute of an <img> tag dynamically?
+//*! Modify an Attribute – How can you change the src attribute of an <img> tag dynamically?
 
-function changeSrc(){
-  document.querySelector('img').src=''
-  document.querySelector('img').src='https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1C3oEP.img?w=612&h=304&q=90&m=6&f=webp&x=597&y=228&u=t'
+// function changeSrc(){
+//   document.querySelector('img').src=''
+//   document.querySelector('img').src='https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1C3oEP.img?w=612&h=304&q=90&m=6&f=webp&x=597&y=228&u=t'
 
-}
+// }
 
-// Add and Remove a Class – Write JavaScript to add and remove a class from an element.
-function changeClass(){
+//*!  Add and Remove a Class – Write JavaScript to add and remove a class from an element.
+// function changeClass(){
 
   // document.getElementById('my-div').setAttribute('name','new-name');
   // document.getElementById('my-div').setAttribute('class','new-class');
 
 // document.getElementById('my-div').removeAttribute('class');
 
-}
-// Create and Append an Element – Write JavaScript to create a new <li> and add it to an existing <ul>.
+// }
+//*!  Create and Append an Element – Write JavaScript to create a new <li> and add it to an existing <ul>.
 
-// Remove an Element – How do you remove an element from the DOM?
-function removeItem(){
-  let li=document.getElementById('div-remove');
-li.remove()
-}
-// Event Listeners – Attach a click event to a button that logs "Button Clicked" when clicked.
+//*!  Remove an Element – How do you remove an element from the DOM?
+// function removeItem(){
+//   let li=document.getElementById('div-remove');
+// li.remove()
+// }
+//*!  Event Listeners – Attach a click event to a button that logs "Button Clicked" when clicked.
 
-// Prevent Default Behavior – How do you prevent a form submission using JavaScript?
-function formSubmit(event){
-  event.preventDefault();
-  console.log('no reload')
-}
-// Find Parent, Child, and Sibling Elements – Given an element, find its parent, children, and next sibling.
+//*!  Prevent Default Behavior – How do you prevent a form submission using JavaScript?
+// function formSubmit(event){
+//   event.preventDefault();
+//   console.log('no reload')
+// }
+//*!  Find Parent, Child, and Sibling Elements – Given an element, find its parent, children, and next sibling.
 
-function detection(){
-  let nodeItem=document.getElementById('child-container');
+// function detection(){
+//   let nodeItem=document.getElementById('child-container');
 
-console.log(nodeItem.children)
-console.log(nodeItem.parentElement)
-console.log(nodeItem)
+// console.log(nodeItem.children)
+// console.log(nodeItem.parentElement)
+// console.log(nodeItem)
 
 
-}
-detection()
+// }
+// detection()
 
 // Intermediate Level (11-20)
-// Modify CSS with JavaScript – Change the background color of a <div> when a button is clicked.
+//*!  Modify CSS with JavaScript – Change the background color of a <div> when a button is clicked.
+// function changeColor(){
+// let div=document.getElementById('div-color');
+// div.style.backgroundColor='green'
 
-// Toggle an Element's Visibility – Implement a show/hide functionality for a <div>.
 
-// Add Multiple Event Listeners – Add an event listener to multiple buttons and log their text on click.
+// }
+//*!  Toggle an Element's Visibility – Implement a show/hide functionality for a <div>.
+// function toggleVisibility(){
+// let divToggle=document.getElementById('div-toggle');
+// divToggle.style.visibility=divToggle.style.visibility=='visible'?'hidden':'visible';
 
-// Debounce an Input Field – Implement a debounce function that delays executing a function while typing.
 
-// Event Delegation – Implement event delegation to handle clicks on dynamically added elements.
+// }
+//*! Add Multiple Event Listeners – Add an event listener to multiple buttons and log their text on click.
+// function addEvent(){
+// let btns=document.getElementsByClassName('btn-mult');
+// console.log(btns)
+// for(let i in btns){
 
-// Drag and Drop – Implement a simple drag-and-drop feature for a div.
+// console.log(btns[i].innerText)  
+// btns[i].addEventListener('click',()=>{
+//   console.log(btns[i].innerText)
+// })
+// }
+// }
+//*!  Debounce an Input Field – Implement a debounce function that delays executing a function while typing.
 
-// Stop Event Bubbling and Capturing – Demonstrate stopPropagation() and stopImmediatePropagation().
+//*! Event Delegation – Implement event delegation to handle clicks on dynamically added elements.
 
-// Clone an Element – Write a function to duplicate an element and append it to the DOM.
+//*!  Drag and Drop – Implement a simple drag-and-drop feature for a div.
 
+//*! Stop Event Bubbling and Capturing – Demonstrate stopPropagation() and stopImmediatePropagation().
+
+//*!  Clone an Element – Write a function to duplicate an element and append it to the DOM.
+// function cloneMe(event){
+//  let item= document.getElementsByClassName('duplicate-item')
+
+//  console.log(item)
+// let newNode=item[0].cloneNode(true);
+// document.body.appendChild(newNode)
+// }
 // Create a Modal Popup – Implement a modal using JavaScript without any external library.
+// function openModal(){
+// document.getElementById('modal-item').style.display='block'
 
-// Lazy Load Images – Implement lazy loading of images using JavaScript.
+
+
+// }
+//*!  Lazy Load Images – Implement lazy loading of images using JavaScript.
 
 // Advanced Level (21-30)
-// Virtual DOM vs. Real DOM – Explain how the virtual DOM differs from the real DOM.
+//*! Virtual DOM vs. Real DOM – Explain how the virtual DOM differs from the real DOM.
 
-// Custom Context Menu – Replace the default right-click context menu with a custom menu.
+//*!  Custom Context Menu – Replace the default right-click context menu with a custom menu.
 
-// Infinite Scroll Implementation – Load more content dynamically when scrolling reaches the bottom.
+//*! Infinite Scroll Implementation – Load more content dynamically when scrolling reaches the bottom.
 
-// Build an Accordion – Create an expandable/collapsible FAQ section.
+//*! Build an Accordion – Create an expandable/collapsible FAQ section.
 
-// Dynamic Table Sorting – Implement a sortable table when clicking on column headers.
+//*! Dynamic Table Sorting – Implement a sortable table when clicking on column headers.
 
-// Detect Element Visibility – Write a function to check if an element is in the viewport.
+//*! Detect Element Visibility – Write a function to check if an element is in the viewport.
 
-// Build a Custom Tooltip – Show a tooltip when hovering over an element.
+//*! Build a Custom Tooltip – Show a tooltip when hovering over an element.
 
-// Detect User Inactivity – Log out a user after a period of inactivity using JavaScript.
+//*! Detect User Inactivity – Log out a user after a period of inactivity using JavaScript.
 
-// Record and Replay DOM Changes – Track all changes in the DOM and replay them later.
+//*! Record and Replay DOM Changes – Track all changes in the DOM and replay them later.
 
-// Dark Mode Toggle – Implement a dark mode feature using JavaScript.
+//*!  Dark Mode Toggle – Implement a dark mode feature using JavaScript.
 
 
 
@@ -138,40 +169,40 @@ detection()
 /* 
 
 
- //*! Manipulating Nodes:
+ //Manipulating Nodes:
 node.appendChild(newNode)          // Appends a new child node.
 node.insertBefore(newNode, refNode) // Inserts a new node before a reference node.
 node.replaceChild(newNode, oldNode) // Replaces a child node.
 node.removeChild(childNode)        // Removes a child node.
- //*!  Checking Node Information:
+ // Checking Node Information:
 node.contains(otherNode)           // Returns true if the node contains the other node.
 node.hasChildNodes() 
 
  //*!Element Methods
-  //*! Manipulating Attributes:
+  //Manipulating Attributes:
 element.getAttribute(name)         // Returns the value of an attribute.
 element.setAttribute(name, value)  // Sets the value of an attribute.
 element.removeAttribute(name)      // Removes an attribute.
 element.hasAttribute(name)         // Returns true if the attribute exists.
-  //*! Class Manipulation
+  //Class Manipulation
   element.classList.add(className)   // Adds a class.
 element.classList.remove(className) // Removes a class.
 element.classList.toggle(className, force) // Toggles a class (optional force parameter).
 element.classList.contains(className) // Returns true if the class exists.
 
-// *! Styles
+//Styles
 element.style.property             // Gets or sets an inline style property.
 element.setAttribute("style", "key: value;") // Sets multiple inline styles.
-// *! Content Manipulation
+//Content Manipulation
 element.innerHTML                  // Gets or sets the HTML content of the element.
 element.textContent                // Gets or sets the text content of the element.
 element.outerHTML                  // Gets or sets the HTML for the entire element.
-// *!Adding and Removing Event Listeners:
+//*!Adding and Removing Event Listeners:
 
 
 element.addEventListener(event, handler, options) // Adds an event listener.
 element.removeEventListener(event, handler, options) // Removes an event listener.
-// *!Event Triggering:
+//*!Event Triggering:
 element.dispatchEvent(event)
 
 //*!Querying the DOM:
@@ -187,7 +218,7 @@ input.blur()                       // Removes focus from the input.
 input.select()                     // Selects the text in the input.
 input.setSelectionRange(start, end) // Sets the selection range for text input.
 
-//*! submision
+//submision
 form.submit()                      // Submits the form.
 form.reset()
 //*!Window and Document Interaction
@@ -289,7 +320,7 @@ Event Listeners:
 
 window.addEventListener(event, callback) // Adds an event listener.
 window.removeEventListener(event, callback) // Removes an event listener.
-//*! Global Events:
+//Global Events:
 
 window.onload                     // Triggered when the page is fully loaded.
 window.onresize                   // Triggered when the window is resized.
@@ -311,7 +342,7 @@ sessionStorage.setItem(key, value) // Stores a key-value pair.
 sessionStorage.getItem(key)        // Retrieves the value of a key.
 sessionStorage.removeItem(key)     // Removes a key.
 sessionStorage.clear()             // Clears all keys.
-//*! Browser Information
+//Browser Information
 //*!Navigator API:
 
 window.navigator                  // Provides information about the browser and device.
