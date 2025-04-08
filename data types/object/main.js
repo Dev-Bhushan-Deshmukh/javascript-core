@@ -248,3 +248,36 @@
 
 // Create an Immutable Object – Implement an immutable object where modifications create a new object instead of modifying the existing one.
 
+//group by property
+
+// let  employees = [
+//     { name: "John Doe", role: "Developer", department: "Engineering" },
+//     { name: "Jane Smith", role: "Designer", department: "Creative" },
+//     { name: "John Doe", role: "Team Lead", department: "Engineering" },
+//     { name: "Emily Johnson", role: "Developer", department: "Engineering" },
+//     { name: "Michael Brown", role: "Support", department: "Customer Service" },
+//     { name: "Jane Smith", role: "Senior Designer", department: "Creative" },
+//     { name: "Chris Davis", role: "HR Manager", department: "Human Resources" },
+//     { name: "John Doe", role: "Project Manager", department: "Operations" },
+//     { name: "Emily Johnson", role: "QA Engineer", department: "Quality Assurance" },
+//     { name: "Michael Brown", role: "Sales Executive", department: "Sales" },
+//   ];
+  
+  
+//   let groupedObj={};
+  
+//   for(let i of employees)
+//   {
+
+//       if(!groupedObj.hasOwnProperty(i.name)){
+         
+//           groupedObj[i.name]=[i.role]
+          
+//       }
+//       else{
+//             groupedObj[i.name]= [...groupedObj[i.name],...[i.role]]
+//       }
+     
+      
+//   }
+//   console.log(groupedObj)
